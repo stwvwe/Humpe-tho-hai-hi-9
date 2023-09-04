@@ -1,0 +1,46 @@
+# Config file for main.py | Nitro Dropper Bot
+
+#--------------------------------> Discord Bot Configuration <--------------------------------#
+bot_token: "" # You can obtain a bot token on https://discord.com/developers/applications
+guild_ids: ["12345"] # You can add multiple guild ids that will be able to use same bot, for example ["123456", "123456"]
+bot_status: "" # Custom bot status that will appear on it's profile
+bot_owner: "" # Discord ID of user that will be able to use all bot's commands.
+
+#------------------------------------> File configuration <------------------------------------#
+nitro_tokens_1m_file: "./assets/1m-tokens.txt" # Path to 1 month nitro tokens txt file
+nitro_tokens_3m_file: "./assets/3m-tokens.txt" # Path to 3 month nitro tokens txt file
+nitro_links_file: "./assets/nitro-links.txt" # Path to nitro gift links file
+proxies_file: "./assets/proxies.txt" # Path to proxies file | This bot doesnt support proxy ip's, only rotating. Proxy format user:pass@server:port
+
+#------------------------------------> Logging configuration <------------------------------------#
+command_logging: True # This can be set to true or false depending on if you want to log users and commands they're running
+command_logs_channel: 12345 # Set channel id of your channel for logging commands and users
+
+#------------------------------------> Embed Configuration <------------------------------------#
+embed_color: 0x4287f5 # Go to google's color picker and pick a color, copy it's hex but not # and infront of hex add "0x"
+embed_error_color: 0xe33030 # Go to google's color picker and pick a color, copy it's hex but not # and infront of hex add "0x"
+
+#------------------------------------> Restock Configuration <------------------------------------#
+restock_alert_ping: "@everyone" # Set this based on which type of ping you want in ur restock alerts: @everyone, @here
+restock_channel: "" # Channel where you would want to announce restocks
+
+#------------------------------------> Payment Configuration <------------------------------------#
+paypal_enabled: true # Set this to true or false depending if you want paypal enabled in /payments
+cashapp_enabled: true # Set this to true or false depending if you want cashapp enabled in /payments
+btc_enabled: true # Set this to true or false depending if you want btc enabled in /payments
+eth_enabled: true # Set this to true or false depending if you want eth enabled in /payments
+ltc_enabled: true # Set this to true or false depending if you want ltc enabled in /payments
+
+paypal: "Paypal email" # Add you paypal link/mail here
+cashapp: "$Cashtag" # Add your cashtag here
+btc: "Bitcoin-addy" # Put in your btc address here
+eth: "Ethereum-addy" # Put in your eth address here
+ltc: "Litecoin-addy" # Put in your ltc address here
+
+#------------------------------------> Misc Configuration <------------------------------------#
+restock_alert_ping: "@everyone" # Set this based on which type of ping you want in ur restock alerts: @everyone, @here
+resock_channel: "" # Channel where you would want to announce restocks
+
+#------------------------------------> Tool Configuration <------------------------------------#
+threads: 150 # How many threads will checker use (Proxy threads)
+license_key: "" # License key provided by the seller
